@@ -30,6 +30,9 @@
                         padding-left: 50px;
                         padding-right: 50px;
                         width: 100%;
+                        &:hover {
+                            cursor: pointer;
+                        }
                         &.p-home__signup {
                             background-color: #00478B;
                             background-image: url("/asset/image/email.svg");
@@ -62,7 +65,6 @@
                                 border-bottom: 1px solid;
                                 border-color: gray;
                                 color: gray;
-                                cursor: default;
                             }
                         }
                     }
