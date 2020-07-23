@@ -1,3 +1,62 @@
+@media screen and (min-width: 0px) and (max-device-width: 767px) {
+    .p-login {
+        padding: 65px 0;
+    }
+}
 .p-login {
     // ここにCSSを書いていく
+    background-image: url(../../asset/image/img_login_bg.jpg);
+    background-position: top 70% center;
+    background-size: cover;
+    color: #fff;
+    font-size: 14px;
+    padding: 120px 0;
+    .p-login__inner {
+        margin: 0 auto;
+        background-color: #222222c0;
+        width: 350px;
+        div {
+            h1 {
+                padding: 50px 0 10px 0;
+                font-size: 30px;
+                text-align: center;
+            }
+            div {
+                padding: 25px 0 10px 0;
+                label {
+                    input[type='email'],
+                    input[type='password'] {
+                        width: 100%;
+                        height: 40px;
+                        border-radius: 5px;
+                    }
+                    cursor: pointer;
+                }
+            }
+            input[type='checkbox'],
+            span {
+                cursor: pointer;
+            }
+            button {
+                margin: 30px 0 20px 0;
+                width: 100%;
+                height: 45px;
+                color: #fff;
+                font-size: 16px;
+                border-radius: 10px;
+                background-color: #fc5200;
+                cursor: pointer;
+            }
+            p,
+            a {
+                font-size: 12px;
+                letter-spacing: 1.5px;
+                padding-bottom: 50px;
+                a {
+                    color: #fff;
+                    text-decoration: underline solid #fff;
+                }
+            }
+        }
+    }
 }
