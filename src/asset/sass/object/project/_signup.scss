@@ -1,3 +1,56 @@
 .p-signup {
     // ここにCSSを書いていく
+    background-image: url(../../asset/image/img_signup_bg.jpg);
+    background-position: top 80% center;
+    background-size: cover;
+    color: #fff;
+    font-size: 14px;
+    padding: 120px 0px;
+}
+
+.p-signup__inner {
+    background-color: rgba(0, 0, 0, 0.55);
+    margin: 0px auto;
+    width: 300px;
+}
+
+.p-signup__inner_content {
+    padding: 30px 0px;
+}
+
+.p-signup__inner_content_password,
+.p-signup__inner_content_email {
+    margin: 20px 0px;
+}
+
+h1 {
+    font-size: 27px;
+}
+
+label {
+    input[type='email'],
+    input[type='password'] {
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+    }
+
+    cursor: pointer;
+}
+
+button {
+    background-color: #fc5200;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    margin: 20px 0px;
+    outline: none;
+    border: none;
+}
+
+p {
+    font-size: 12px;
 }
