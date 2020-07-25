@@ -1,33 +1,51 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
 
-        <%- include('../_includes/_common.ejs') %> 
+<head>
 
-        <title>Tenkue Hotel</title>
+    <%- include('../_includes/_common.ejs') %>
 
-        <!-- OGP -->
-        <%#- include('./_includes/_ogpCommon.ejs') %>
-        <%#- include('./_includes/_ogpTwitter.ejs') %>
-        <%#- include('./_includes/_ogpFacebook.ejs') %>
+    <title>Tenkue Hotel</title>
 
-    </head>
+    <!-- OGP -->
+    <%#- include('./_includes/_ogpCommon.ejs') %>
+    <%#- include('./_includes/_ogpTwitter.ejs') %>
+    <%#- include('./_includes/_ogpFacebook.ejs') %>
+
+</head>
+
 </html>
 
-    <body>
-        <%- include('../_includes/_header') %>
+<body>
+    <%- include('../_includes/_header') %>
 
-        <main>
+    <main>
 
-            <article class="p-signup">
-                <div class="p-signup__inner l-content-wrap-default">
-                    <!-- ここにHTMLを書いていく -->
+        <article class="p-signup">
+            <div class="p-signup__inner l-content-wrap-default">
+                <!-- ここにHTMLを書いていく -->
+                <div class="p-signup__inner_content">
+                    <h1>今すぐTenkue Appに無料で参加しよう。</h1>
+                    <div class="p-signup__inner_content_email">
+                        <label>Email
+                            <input type="email">
+                        </label>
+                    </div>
+                    <div class="p-signup__inner_content_password">
+                        <label>Password
+                            <input type="password">
+                        </label>
+                    </div>
+                    <button>登録</button>
+                    <p>Tenkue App に登録することにより<a href="#">利用規約</a>に同意したものとみなされます。<a href="#">プライバシーポリシー</a>を見る。</p>
                 </div>
-            </article>
+            </div>
+        </article>
 
-        </main>
+    </main>
 
-        <%- include('../_includes/_footer.ejs') %>
+    <%- include('../_includes/_footer.ejs') %>
 
-    </body>
+</body>
+
 </html>
