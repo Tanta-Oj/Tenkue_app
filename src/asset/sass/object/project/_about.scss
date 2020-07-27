@@ -1,3 +1,69 @@
 .p-about {
     // ここにCSSを書いていく
+ 
+    .About {
+        text-align: center;
+        margin: 40px 0 100px;
+
+        &__Title {
+            margin-bottom: 30px;
+        }
+    }
+
+    .Contents {
+        &__Title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+
+        &__Text {
+            width: 900px;
+            margin: 50px 0 100px ;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            &__Left {
+                width: 45%;               
+                margin-top: 30px;
+                
+                &__Description {
+                    margin-top: 10px;
+                }
+
+            }
+
+            &__Image {               
+                width: 45%;
+                object-fit: contain;
+                
+            }
+
+            &__Opposite {
+                width: 900px;                
+                margin: 50px 0 100px ;              
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+            
+
+                &__Right {
+                    margin-top: 30px;                    
+                    width: 45%;
+
+                    &__Description {
+                        margin-top: 10px;
+                    }
+                }
+
+                &__Image {
+                    width: 45%;
+                    object-fit: contain;
+                    
+                }
+            }
+        }
+
+    }
 }
