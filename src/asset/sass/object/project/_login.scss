@@ -1,10 +1,16 @@
-@media screen and (min-width: 0px) and (max-device-width: 767px) {
-    .p-login {
-        padding: 65px 0;
-    }
-}
 .p-login {
     // ここにCSSを書いていく
+    @media screen and (min-width: 0px) and (max-device-width: 767px) {
+        padding: 65px 0 75px 0;
+        .p-login__inner {
+            width: 360px;
+            div {
+                div {
+                    padding: 25px 0 5px 0;
+                }
+            }
+        }
+    }
     background-image: url(../../asset/image/img_login_bg.jpg);
     background-position: top 70% center;
     background-size: cover;
@@ -34,9 +40,13 @@
                 }
             }
             input[type='checkbox'],
-            span {
+            input[type='checkbox'] + label {
                 cursor: pointer;
+                &:checked + label {
+                    color: #ffffffd0;
+                }
             }
+
             button {
                 margin: 30px 0 20px 0;
                 width: 100%;
@@ -46,15 +56,24 @@
                 border-radius: 10px;
                 background-color: #fc5200;
                 cursor: pointer;
+                transition: background-color 0.4s;
+                outline: none;
+                &:hover {
+                    background-color: #fc5400d0;
+                }
             }
-            p,
-            a {
+            p {
                 font-size: 12px;
                 letter-spacing: 1.5px;
                 padding-bottom: 50px;
                 a {
+                    font-size: 12px;
+                    letter-spacing: 1.5px;
                     color: #fff;
                     text-decoration: underline solid #fff;
+                }
+                :hover {
+                    color: #ffffffd0;
                 }
             }
         }
