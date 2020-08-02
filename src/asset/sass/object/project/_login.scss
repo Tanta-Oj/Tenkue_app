@@ -1,9 +1,8 @@
 .p-login {
     // ここにCSSを書いていく
     @media screen and (min-width: 0px) and (max-device-width: 767px) {
-        padding: 65px 0 75px 0;
+        padding: 65px 5px 75px 5px;
         .p-login__inner {
-            width: 360px;
             div {
                 div {
                     padding: 25px 0 5px 0;
