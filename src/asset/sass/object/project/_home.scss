@@ -1,18 +1,38 @@
 .p-home {
     // ここにCSSを書いていく
+    $sp: 767px;
+    @mixin sp {
+        @media (max-width: ($sp)) {
+            @content;
+        }
+    }
     section {
         padding-bottom: 50px;
         padding-top: 50px;
         text-align: center;
         width: 100%;
+        @include sp {
+            padding-bottom: 30px;
+            padding-top: 0px;
+        }
         &.p-home__title {
             margin-top: 20px;
+            h2>span {
+                display: inline-block;
+            }
         }
         &.p-home__contents {
             display: flex;
             margin-bottom: 100px;
+            @include sp {
+                display: block;
+                margin-bottom: 50px;
+            }
             div {
                 width: 45%;
+                @include sp {
+                    width: 100%;
+                }
                 &.p-home__img_home {
                     margin-right: 10%;
                     user-select: none;
@@ -30,6 +50,9 @@
                         padding-left: 50px;
                         padding-right: 50px;
                         width: 100%;
+                        @include sp {
+                            margin-top: 25px;
+                        }
                         &:hover {
                             cursor: pointer;
                         }
@@ -37,6 +60,9 @@
                             background-color: #00478B;
                             background-image: url("/asset/image/email.svg");
                             color: #fff;
+                            @include sp {
+                                margin-bottom: 0px;
+                            }
                             &:hover {
                                 background-color: #2B669F;
                             }
@@ -61,6 +87,9 @@
                         font-size: 0.85rem;
                         a {
                             font-size: 0.85rem;
+                            @include sp {
+                                display: inline-block;
+                            }
                             &:hover {
                                 border-bottom: 1px solid;
                                 border-color: gray;
