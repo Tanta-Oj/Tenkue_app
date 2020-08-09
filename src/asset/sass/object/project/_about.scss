@@ -1,6 +1,45 @@
 .p-about {
     // ここにCSSを書いていく
- 
+    width: 100%;
+    @media screen and (max-width: 767px) {
+
+        .About {
+            margin-top: 20%;
+            margin-bottom: 20%;
+        }
+
+        .Contents {
+            max-width: 100%;
+            text-align: center;
+
+            &__Text {
+                display: block;
+                max-width: 100%;
+                height: auto;
+                
+
+                &__Opposite {
+                    display: block;
+                    max-width: 100%;
+                }
+                &__Left {
+                    width: 100%;
+                    padding-bottom: 30px;
+                }
+                &__Image {
+                    width: 100%;
+                }
+                &__Opposite__Right {
+                    width: 100%;
+                    padding-bottom: 30px;
+                }
+                &__Opposite__Image {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
     .About {
         text-align: center;
         margin: 40px 0 100px;
@@ -19,37 +58,36 @@
 
         &__Text {
             width: 900px;
-            margin: 50px 0 100px ;
+            margin: 0 auto;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            padding-bottom: 40px;
 
             &__Left {
-                width: 45%;               
-                margin-top: 30px;
-                
+                width: 45%;
+                margin-top: 20px;
+
                 &__Description {
                     margin-top: 10px;
                 }
-
             }
 
-            &__Image {               
+            &__Image {
                 width: 45%;
                 object-fit: contain;
-                
             }
 
             &__Opposite {
-                width: 900px;                
-                margin: 50px 0 100px ;              
+                width: 900px;
+                padding: 20px 0 40px;
+                margin: 0 auto;
                 display: flex;
                 flex-direction: row-reverse;
                 justify-content: space-between;
-            
 
                 &__Right {
-                    margin-top: 30px;                    
+                    margin-top: 30px;
                     width: 45%;
 
                     &__Description {
@@ -60,10 +98,8 @@
                 &__Image {
                     width: 45%;
                     object-fit: contain;
-                    
                 }
             }
         }
-
     }
 }
