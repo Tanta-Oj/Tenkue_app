@@ -4,12 +4,7 @@
 
         <%- include('./_includes/_common.ejs') %> 
 
-        <title>Tenkue Hotel</title>
-
-        <!-- OGP -->
-        <%#- include('./_includes/_ogpCommon.ejs') %>
-        <%#- include('./_includes/_ogpTwitter.ejs') %>
-        <%#- include('./_includes/_ogpFacebook.ejs') %>
+        <title>Tenkue App</title>
 
     </head>
 </html>
@@ -18,26 +13,7 @@
         <%- include('./_includes/_header') %>
 
         <main>
-
-            <article class="p-home">
-                <div class="p-home__inner l-content-wrap-default">
-                    <!-- ここにHTMLを書いていく -->
-                    <section class="p-home__title">
-                        <h2><span>トラベラーの</span><span>ための</span><span>No.1アプリ</span></h2>
-                    </section>
-                    <section class="p-home__contents">
-                        <div class="p-home__img_home">
-                            <img src="/asset/image/img_home.jpg" alt="pictures of travelers"/>
-                        </div>
-                        <div class="p-home__links">
-                            <button onclick="location.href='/signup/'" type="button" class="p-home__signup">新規登録</button>
-                            <button onclick="location.href='/login/'" type="button" class="p-home__login">ログイン</button>
-                            <p>TenkueAppに登録することにより利用規約に同意したものとみなされます。<a href="#">プライバシーポリシーを見る。</a></p>
-                        </div>
-                    </section>
-                </div>
-            </article>
-            
+            <%- include('./_pages/_mainVisual') %>
 
         </main>
 

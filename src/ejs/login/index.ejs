@@ -2,14 +2,9 @@
 <html lang="ja">
     <head>
 
-        <%- include('../_includes/_common.ejs') %>
+        <%- include('../_includes/_common.ejs') %> 
 
-        <title>Tenkue Hotel</title>
-
-        <!-- OGP -->
-        <%#- include('./_includes/_ogpCommon.ejs') %>
-        <%#- include('./_includes/_ogpTwitter.ejs') %>
-        <%#- include('./_includes/_ogpFacebook.ejs') %>
+        <title>Tenkue App</title>
 
     </head>
 </html>
@@ -20,26 +15,25 @@
         <main>
             <article class="p-login">
                 <div class="p-login__inner l-content-wrap-default">
-                    <!-- ここにHTMLを書いていく -->
-                    <div>
-                        <h1>ログイン</h1>
-                        <div>
-                            <label for="p-login__email">Email
-                                <input type="email" id="p-login__email">
-                            </label>
+                    <h2 class="p-login__title">ログイン</h2>
+                    <form action="" class="p-login__form">
+                        <div class="p-login__inputWrap">
+                            <label for="email" class="p-login__label">Email</label>
+                            <input type="text" id="email" class="p-login__input">
                         </div>
-                        <div>
-                            <label for="p-login__password">password
-                                <input type="password" id="p-login__password">
-                            </label>
+                        <div class="p-login__inputWrap">
+                            <label for="pass" class="p-login__label">Password</label>
+                            <input type="text" id="pass" class="p-login__input">
                         </div>
-                        <input type="checkbox" id="p-login__checkbox">
-                        <label for="p-login__checkbox">
-                            記憶する
-                        </label>
-                        <button>登録</button>
-                        <p>Tenkue App に登録することにより利用規約に同意したものとみなされます。 <a href="#"> プライバシーポリシーを見る。</a></p>
-                    </div>
+                        <div class="p-login__inputWrap">
+                            <input type="checkbox" name="memory"><span class="p-login__checkbox">記憶する</span>
+                        </div>
+                        <button type="submit" class="p-login__btn">登録</button>
+                        <p class="p-login__note">
+                            Tenkue App に登録することにより<a href="#">利用規約</a> に同意したものとみなされます。
+                            <a href="#">プライバシーポリシー</a>を見る。
+                        </p>
+                    </form>
                 </div>
             </article>
 

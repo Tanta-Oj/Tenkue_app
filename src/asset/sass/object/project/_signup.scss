@@ -1,62 +1,68 @@
 .p-signup {
-    // ここにCSSを書いていく
-    background-image: url(../../asset/image/img_signup_bg.jpg);
-    background-position: top 80% center;
+    padding: 200px 0 150px;
+    background-image: url(/asset/image/mv.jpg);
+    background-position: center;
     background-size: cover;
-    color: #fff;
-    font-size: 14px;
-    padding: 120px 0px;
+    background-repeat: no-repeat;
 
-
-.p-signup__inner {
-    background-color: rgba(0, 0, 0, 0.55);
-    margin: 0px auto;
-    width: 300px;
-}
-
-.p-signup__inner_content {
-    padding: 30px 0px;
-}
-
-.p-signup__inner_content_password,
-.p-signup__inner_content_email {
-    margin: 20px 0px;
-}
-
-h1 {
-    font-size: 27px;
-}
-
-label {
-    input[type='email'],
-    input[type='password'] {
-        width: 100%;
-        height: 40px;
-        border-radius: 5px;
-        outline: none;
-        border: none;
+    @include sp-layout() {
+        padding: 150px 10px 75px;
     }
 
-    cursor: pointer;
-}
+    &__inner {
+        max-width: 350px;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        background-color: rgba($color-default, 0.8);
 
-a {
-    color: #fff;
-    font-size: 12px;
-}
+        @include tab-layout() {
+            max-width: 350px;
+        }
+    }
 
-button {
-    background-color: #fc5200;
-    width: 100%;
-    height: 40px;
-    color: #fff;
-    border-radius: 5px;
-    margin: 20px 0px;
-    outline: none;
-    border: none;
-}
+    &__title {
+        margin-bottom: 1em;
+        color: $color-light;
+    }
 
-p {
-    font-size: 12px;
-}
+    &__inputWrap {
+        margin-bottom: 30px;
+
+        &:last-of-type {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__label {
+        width: 100%;
+        color: $color-light;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 0.6em;
+        border: none;
+        border-radius: 0.2em;
+        @include font-size(16);
+    }
+
+    &__btn {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0.5em 4em;
+        color: $color-light;
+        background-color: rgba($color-orange, 1);
+        border: 1px solid #222;
+        border-radius: 0.5em;
+        appearance: none;
+        display: block;
+        cursor: pointer;
+        @include font-size(16);
+    }
+
+    &__note,
+    &__note a {
+        color: $color-light;
+        @include font-size(14);
+    }
 }
